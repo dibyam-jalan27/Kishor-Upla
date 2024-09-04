@@ -6,8 +6,8 @@ export default function Sections() {
   return (
     <div>
       <section className="h-[calc(100dvh)] w-full">
-        <div className="flex h-full pb-24 items-center justify-center w-full">
-          <div className="w-2/5 p-8">
+        <div className="flex flex-col md:flex-row h-full pb-24 items-center justify-center w-full">
+          <div className="md:w-2/5 p-8">
             <div className="p-4 border-2 border-primary/50">
               <Image
                 src="/hero.jpg"
@@ -18,9 +18,11 @@ export default function Sections() {
               />
             </div>
           </div>
-          <div className="w-2/5 ml-4">
-            <h1 className="text-5xl font-bold">Kishor Upla, Ph.D. </h1>
-            <h1 className="text-2xl font-medium pt-2">
+          <div className="md:w-2/5 ml-4">
+            <h1 className="text-3xl md:text-5xl font-bold">
+              Kishor Upla, Ph.D.{" "}
+            </h1>
+            <h1 className="text-xl md:text-2xl font-medium pt-2">
               Assistant Professor | Electronics Engineering
             </h1>
           </div>
