@@ -12,16 +12,14 @@ export default function Sections() {
     <div>
       <section className="h-[calc(100dvh)] w-full">
         <div className="flex flex-col md:flex-row h-full pb-24 items-center justify-center w-full">
-          <div className="md:w-2/5 p-8">
-            <div className="p-4 border-2 border-primary/50">
-              <Image
-                src="/hero.jpg"
-                alt="hero"
-                width={800}
-                height={300}
-                objectFit="cover"
-              />
-            </div>
+          <div className="md:w-2/5 ">
+            <Image
+              src="/hero.png"
+              alt="hero"
+              width={800}
+              height={300}
+              objectFit="cover"
+            />
           </div>
           <div className="md:w-2/5 ml-4">
             <h1
