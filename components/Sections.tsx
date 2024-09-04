@@ -35,7 +35,7 @@ export default function Sections() {
               Assistant Professor | Electronics Engineering
             </h1>
             <p
-              className="text-sm md:text-base text-muted-foreground pt-4"
+              className="text-sm font-light md:text-base text-muted-foreground pt-4 text-center md:text-left"
               style={{ lineHeight: "1.8" }}
             >
               I am an academic with a Ph.D. in Electronics and Communication,
