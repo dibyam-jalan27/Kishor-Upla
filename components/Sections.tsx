@@ -1,11 +1,5 @@
 "use client";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
-
-const monstserret = Montserrat({
-  weight: "700",
-  subsets: ["latin"],
-});
 
 export default function Sections() {
   return (
@@ -23,14 +17,14 @@ export default function Sections() {
           </div>
           <div className="md:w-2/5 md:ml-4">
             <h1
-              className={`${monstserret.style} text-3xl md:text-5xl font-bold
+              className={`text-3xl md:text-5xl font-bold
                 text-center md:text-left
               `}
             >
               Kishor <span className="text-primary">Upla</span>, Ph.D.{" "}
             </h1>
             <h1
-              className={`${monstserret.style} text-xl md:text-2xl font-medium pt-3
+              className={`text-xl md:text-2xl font-medium pt-3
                 text-center md:text-left
               `}
             >
