@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { SideBar } from "@/components/Sidebar";
 
 const roboto = Roboto({
   weight: "400",
@@ -24,28 +25,6 @@ export const metadata: Metadata = {
     "IEEE",
     "ERCIM Fellowship",
   ],
-  openGraph: {
-    title: "Kishor Upla's Portfolio",
-    description:
-      "Explore the portfolio of Dr. Kishor Upla, an Assistant Professor at SVNIT Surat, specializing in image processing, computer vision, and machine learning. Discover his research, publications, and professional achievements.",
-    url: "https://sites.google.com/site/kpupla",
-    images: [
-      {
-        url: "URL_to_image",
-        width: 800,
-        height: 600,
-        alt: "Kishor Upla's Portfolio Image",
-      },
-    ],
-    siteName: "Kishor Upla's Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Kishor Upla's Portfolio",
-    description:
-      "Explore the portfolio of Dr. Kishor Upla, an Assistant Professor at SVNIT Surat, specializing in image processing, computer vision, and machine learning. Discover his research, publications, and professional achievements.",
-    images: ["URL_to_image"],
-  },
 };
 
 export default function RootLayout({
@@ -55,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <SideBar>{children}</SideBar>
+      </body>
     </html>
   );
 }
