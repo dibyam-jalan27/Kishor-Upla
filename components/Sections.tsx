@@ -40,10 +40,10 @@ export default function Sections() {
             >
               I am an academic with a Ph.D. in Electronics and Communication,
               focusing on multi-resolution image fusion. With over a decade of
-              experience as an Assistant Professor at SVNIT Surat, I've earned
-              recognition for my research in computer vision and image
+              experience as an Assistant Professor at SVNIT Surat, I{"'"}ve
+              earned recognition for my research in computer vision and image
               processing. My work has been published in esteemed journals and
-              conferences, and I've been honored with awards like the ERCIM
+              conferences, and I{"'"}ve been honored with awards like the ERCIM
               Post-doctoral Fellowship. My research interests include machine
               learning, deep learning, and biomedical image processing.
             </p>
