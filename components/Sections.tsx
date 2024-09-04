@@ -6,7 +6,7 @@ export default function Sections() {
     <div>
       <section className="h-[calc(100dvh)] w-full">
         <div className="flex flex-col md:flex-row h-full items-center justify-center w-full">
-          <div className="md:w-2/5">
+          <div className="md:w-2/5 mb-5">
             <Image
               src="/hero.png"
               alt="hero"
