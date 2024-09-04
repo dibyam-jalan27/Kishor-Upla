@@ -11,8 +11,8 @@ export default function Sections() {
   return (
     <div>
       <section className="h-[calc(100dvh)] w-full">
-        <div className="flex flex-col md:flex-row h-full pb-24 items-center justify-center w-full">
-          <div className="md:w-2/5 ">
+        <div className="flex flex-col md:flex-row h-full items-center justify-center w-full">
+          <div className="md:w-2/5 h-1/2">
             <Image
               src="/hero.png"
               alt="hero"
@@ -21,7 +21,7 @@ export default function Sections() {
               objectFit="cover"
             />
           </div>
-          <div className="md:w-2/5 ml-4">
+          <div className="md:w-2/5 md:ml-4">
             <h1
               className={`${monstserret.style} text-3xl md:text-5xl font-bold
                 text-center md:text-left
@@ -37,7 +37,9 @@ export default function Sections() {
               Assistant Professor | Electronics Engineering
             </h1>
             <p
-              className="text-sm font-light md:text-base text-muted-foreground pt-4 text-center md:text-left"
+              className="text-sm font-light md:text-base text-muted-foreground pt-4 text-center md:text-left
+              px-8 md:px-0
+              "
               style={{ lineHeight: "1.8" }}
             >
               I am an academic with a Ph.D. in Electronics and Communication,
