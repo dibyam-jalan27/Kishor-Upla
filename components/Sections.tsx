@@ -17,18 +17,22 @@ export default function Sections() {
               src="/hero.png"
               alt="hero"
               width={800}
-              height={300}
+              height={500}
               objectFit="cover"
             />
           </div>
           <div className="md:w-2/5 ml-4">
             <h1
-              className={`${monstserret.style} text-3xl md:text-5xl font-bold`}
+              className={`${monstserret.style} text-3xl md:text-5xl font-bold
+                text-center md:text-left
+              `}
             >
-              Kishor Upla, Ph.D.{" "}
+              Kishor <span className="text-primary">Upla</span>, Ph.D.{" "}
             </h1>
             <h1
-              className={`${monstserret.style} text-xl md:text-2xl font-medium pt-3`}
+              className={`${monstserret.style} text-xl md:text-2xl font-medium pt-3
+                text-center md:text-left
+              `}
             >
               Assistant Professor | Electronics Engineering
             </h1>
