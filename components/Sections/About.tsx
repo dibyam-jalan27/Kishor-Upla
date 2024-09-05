@@ -10,8 +10,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <div className="flex flex-col md:flex-row h-full items-center justify-center w-full">
-      <div className="md:w-3/8  mb-5">
+    <div className="flex flex-col md:flex-row h-full items-center md:justify-center w-full">
+      <div className="md:w-3/8 mb-5">
         <Image
           src="/hero.png"
           alt="hero"
@@ -31,10 +31,9 @@ export default function About() {
           Assistant Professor | Electronics Engineering
         </h1>
         <p
-          className="text-sm font-light md:text-base text-muted-foreground pt-4 text-justify md:text-left
-              px-8 md:px-0
+          className="text-sm font-light md:text-base text-muted-foreground pt-4 text-center md:text-left px-8 md:px-0
+          leading-7 md:leading-9
               "
-          style={{ lineHeight: "1.8" }}
         >
           I am an academic with a Ph.D. in Electronics and Communication,
           specializing in multi-resolution image fusion. With over a decade of
@@ -44,17 +43,17 @@ export default function About() {
           processing.
         </p>
       </div>
-      <div className="md:w-1/10 mx-5 md:space-y-5 flex md:flex- space-x-4 mt-2">
+      <div className="md:w-1/10 mx-5 md:space-y-5 flex md:flex-col space-x-4 mt-5">
         <Link href="mailto:kishorupla@gmail.com">
-          <Button className="rounded-full bg-white hover:border-white  text-primary py-7 px-3 hover:text-white font-bold border-2 border-primary">
-            <AiOutlineMail className="text-3xl" />
+          <Button className="rounded-full bg-white hover:border-white  text-primary py-5 md:py-7 px-3 hover:text-white font-bold border-2 border-primary">
+            <AiOutlineMail className="text-xl md:text-3xl" />
           </Button>
         </Link>
-        <Button className="rounded-full bg-white hover:border-white  text-primary py-7 px-3 hover:text-white font-bold border-2 border-primary">
-          <BiLogoLinkedin className="text-3xl" />
+        <Button className="rounded-full bg-white hover:border-white  text-primary py-5 md:py-7 px-3 hover:text-white font-bold border-2 border-primary">
+          <BiLogoLinkedin className="text-xl md:text-3xl" />
         </Button>
-        <Button className="rounded-full bg-white hover:border-white  text-primary py-7 px-3 hover:text-white font-bold border-2 border-primary">
-          <FaXTwitter className="text-3xl" />
+        <Button className="rounded-full bg-white hover:border-white  text-primary py-5 md:py-7 px-3 hover:text-white font-bold border-2 border-primary">
+          <FaXTwitter className="text-xl md:text-3xl" />
         </Button>
       </div>
     </div>
