@@ -11,7 +11,7 @@ import {
 export default function Interest() {
   return (
     <>
-      <h1 className="mb-5 text-center text-2xl font-semibold md:mx-20 md:text-left md:text-4xl">
+      <h1 className="mb-5 text-center text-2xl font-semibold md:ml-28 md:text-left md:text-4xl">
         Research <span className="text-primary">Interest</span>
       </h1>
       <BentoGrid className="mx-3 max-w-4xl md:mx-auto md:auto-rows-[20rem]">
