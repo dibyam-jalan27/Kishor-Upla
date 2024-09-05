@@ -80,7 +80,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
-        <div className="flex h-full max-h-screen flex-col gap-2 fixed">
+        <div className="fixed flex h-full max-h-screen flex-col gap-2">
           <div className="flex h-14 items-center px-4 lg:h-[60px]">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <h1 className="text-4xl font-bold tracking-tighter">
@@ -91,7 +91,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               {menuItems.map((item) => (
-                <div key={item.label} className="label mt-2 pt-2 pb-2">
+                <div key={item.label} className="label mt-2 pb-2 pt-2">
                   <label htmlFor="">{item.label}</label>
                   {item.items.map((subItem) => (
                     <Link
@@ -101,7 +101,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
                         "flex items-center gap-3 rounded-lg px-3 py-2 transition-all",
                         pathname === subItem.href
                           ? "bg-muted text-primary hover:text-primary"
-                          : "text-muted-foreground hover:text-primary"
+                          : "text-muted-foreground hover:text-primary",
                       )}
                     >
                       {subItem.icon}
@@ -112,7 +112,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
               ))}
             </nav>
           </div>
-          <div className="mt-auto p-4 justify-center items-center flex flex-col space-y-2 w-full">
+          <div className="mt-auto flex w-full flex-col items-center justify-center space-y-2 p-4">
             <a href="/KishorUplaCV.pdf" className="w-full">
               <Button className="w-full" variant="secondary">
                 Download CV
@@ -125,13 +125,13 @@ export function SideBar({ children }: { children: React.ReactNode }) {
         </div>
       </div>
       <div className="flex flex-col">
-        <header className="flex h-14 md:h-0 bg-transparent items-center gap-4 px-4  lg:px-6">
+        <header className="grainy-dark flex h-14 items-center gap-4 bg-slate-50 px-4 md:h-0 lg:px-6">
           <Sheet>
             <SheetTrigger asChild>
               <Button
                 variant="outline"
                 size="icon"
-                className="shrink-0 md:hidden fixed"
+                className="fixed shrink-0 md:hidden"
               >
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle navigation menu</span>
@@ -151,7 +151,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
                   </h1>
                 </a>
                 {menuItems.map((item) => (
-                  <div key={item.label} className="label mt-1 mb-1 pt-2 pb-2">
+                  <div key={item.label} className="label mb-1 mt-1 pb-2 pt-2">
                     <label htmlFor="">{item.label}</label>
                     {item.items.map((subItem) => (
                       <SheetClose asChild key={subItem.label}>
@@ -162,7 +162,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
                             "flex items-center gap-3 rounded-lg px-3 py-2 transition-all",
                             pathname === subItem.href
                               ? "bg-muted text-primary hover:text-primary"
-                              : "text-muted-foreground hover:text-primary"
+                              : "text-muted-foreground hover:text-primary",
                           )}
                         >
                           {subItem.icon}
@@ -173,9 +173,9 @@ export function SideBar({ children }: { children: React.ReactNode }) {
                   </div>
                 ))}
               </nav>
-              <div className="mt-auto ">
+              <div className="mt-auto">
                 <Link href="" className="w-full">
-                  <Button className="w-full mb-2" variant="secondary">
+                  <Button className="mb-2 w-full" variant="secondary">
                     Download CV
                   </Button>
                 </Link>
