@@ -5,8 +5,7 @@ import { Book, Heart, Menu, Radio, Users } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
-import { Card, CardContent, CardDescription, CardHeader } from "./ui/card";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const menuItems = [
   {
@@ -114,11 +113,11 @@ export function SideBar({ children }: { children: React.ReactNode }) {
             </nav>
           </div>
           <div className="mt-auto p-4 justify-center items-center flex flex-col space-y-2 w-full">
-            <Link href="" className="w-full">
+            <a href="/KishorUplaCV.pdf" className="w-full">
               <Button className="w-full" variant="secondary">
                 Download CV
               </Button>
-            </Link>
+            </a>
             <Link href="mailto:dibyam1jalan@gmail.com" className="w-full">
               <Button className="w-full">Contact Me</Button>
             </Link>
@@ -140,14 +139,17 @@ export function SideBar({ children }: { children: React.ReactNode }) {
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col">
               <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
-                <Link
-                  href="/"
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  download="Kishor Upla Resume"
+                  href="/KishorUplaCV.pdf"
                   className="flex items-center gap-2 font-semibold"
                 >
                   <h1 className="text-4xl font-bold tracking-tighter">
                     Kishor <span className="text-primary">Upla</span>
                   </h1>
-                </Link>
+                </a>
                 {menuItems.map((item) => (
                   <div key={item.label} className="label mt-1 mb-1 pt-2 pb-2">
                     <label htmlFor="">{item.label}</label>
@@ -177,7 +179,7 @@ export function SideBar({ children }: { children: React.ReactNode }) {
                     Download CV
                   </Button>
                 </Link>
-                <Link href="mailto:dibyam1jalan@gmail.com" className="w-full">
+                <Link href="mailto:kishorupla@gmail.com" className="w-full">
                   <Button className="w-full">Contact Me</Button>
                 </Link>
               </div>
