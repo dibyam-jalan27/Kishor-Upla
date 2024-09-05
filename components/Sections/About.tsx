@@ -22,7 +22,7 @@ export default function About() {
           Kishor <span className="text-primary">Upla</span>, Ph.D.{" "}
         </h1>
         <h1 className="pt-3 text-center text-xl font-medium md:text-left md:text-2xl">
-          Assistant Professor | Electronics Engineering
+          Assistant Professor, NIT Surat
         </h1>
         <p className="px-8 pt-4 text-center text-sm font-light leading-7 text-muted-foreground md:px-0 md:text-left md:text-base md:leading-9">
           I am an academic with a Ph.D. in Electronics and Communication,

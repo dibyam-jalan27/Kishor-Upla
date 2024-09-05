@@ -10,7 +10,7 @@ import {
 
 export default function Interest() {
   return (
-    <>
+    <div className="grainy-light bg-slate-50 py-5">
       <h1 className="mb-5 text-center text-2xl font-semibold md:ml-28 md:text-left md:text-4xl">
         Research <span className="text-primary">Interest</span>
       </h1>
@@ -26,7 +26,7 @@ export default function Interest() {
           />
         ))}
       </BentoGrid>
-    </>
+    </div>
   );
 }
 const Skeleton = () => (
