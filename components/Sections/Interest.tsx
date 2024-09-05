@@ -11,8 +11,8 @@ import {
 export default function Interest() {
   return (
     <>
-      <h1 className="mx-20 mb-5 text-3xl font-semibold text-primary">
-        Interest:{" "}
+      <h1 className="mb-5 text-center text-2xl font-semibold md:mx-20 md:text-left md:text-4xl">
+        Research <span className="text-primary">Interest</span>
       </h1>
       <BentoGrid className="mx-3 max-w-4xl md:mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
@@ -58,9 +58,9 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Cricket & Volleyball",
+    title: "Face Recognition & Super-resolution",
     description:
-      "Passionate about team sports, fostering physical and mental well-being.",
+      "Improving accuracy in low-resolution face recognition through advanced algorithms.",
     header: <Skeleton />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
