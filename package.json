@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "prettier":{
-    "plugins": ["prettier-plugin-tailwindcss"]
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",

@@ -1,14 +1,15 @@
 "use client";
 import About from "./Sections/About";
+import Interest from "./Sections/Interest";
 
 export default function Sections() {
   return (
     <>
-      <section id="about" className="md:h-[calc(100dvh)] mb-5 w-full">
+      <section id="about" className="mb-5 w-full md:h-[calc(100dvh)]">
         <About />
       </section>
-      <section className="h-screen bg-gradient-to-r from-blue-400 to-green-400">
-        hhh
+      <section id="interest" className="mb-5 w-full md:h-[calc(100dvh)]">
+        <Interest />
       </section>
     </>
   );

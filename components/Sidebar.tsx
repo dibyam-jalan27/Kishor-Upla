@@ -17,9 +17,9 @@ const menuItems = [
         href: "#about",
       },
       {
-        label: "Skills",
-        icon: <Radio className="h-4 w-4" />,
-        href: "#skills",
+        label: "Interests",
+        icon: <Heart className="h-4 w-4" />,
+        href: "#interest",
       },
       {
         label: "Education",
